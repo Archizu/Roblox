@@ -300,7 +300,7 @@ local Original_RandomFoodChoice = Food.RandomFoodChoice
 local GoldFood = false
 Food.RandomFoodChoice = function(customerOwnerUID, customerOwnerID, isRichCustomer, isPirateCustomer, isNearTree)
     if GoldFood then
-		local spoof = Food.new("70", customerOwnerUID, customerOwnerID, true, true)
+		local spoof = Food.new("60", customerOwnerUID, customerOwnerID, true, true)
 		spoof.IsGold = true
 		return spoof
 	end
@@ -508,7 +508,7 @@ local FastWaiterToggle = FarmTab:CreateToggle({
 
 local GoldFoodToggle = FarmTab:CreateToggle({
    Name = "Gold Food",
-   CurrentValue = false,
+   CurrentValue = true,
    Flag = "GoldFood",
    Callback = function(Value)
 		GoldFood = Value
