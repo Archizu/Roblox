@@ -1073,7 +1073,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "My Restaurant!",
    LoadingSubtitle = "by Rafa (discord.gg/MilkUp)",
    ConfigurationSaving = {
-      Enabled = true,
+      Enabled = false,
       FolderName = nil,
       FileName = "MyRestaurant"
    }
