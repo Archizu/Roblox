@@ -810,7 +810,7 @@ end
 local Original_RandomFoodChoice = Food.RandomFoodChoice
 Food.RandomFoodChoice = function(customerOwnerUID, customerOwnerID, isRichCustomer, isPirateCustomer, isNearTree)
     if GoldFood then
-		local spoof = Food.new("25", customerOwnerUID, customerOwnerID, true, true)
+		local spoof = Food.new("45", customerOwnerUID, customerOwnerID, true, true)
 		spoof.IsGold = true
 		return spoof
 	end
